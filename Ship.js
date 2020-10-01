@@ -21,7 +21,9 @@ let canvas = document.getElementById('background')
     }
     let jump = 200
     function jumping (){
+        audioBouncing.play()
        Ball_Y -= jump
+
     }
 
     let movingObstacle = 950
@@ -62,6 +64,7 @@ let canvas = document.getElementById('background')
        if ( movingObstacle < 130 && Ball_Y >= height || Ball_Y < 0 ) {
            alert("You are DEAD!!!!PRESS F5 TO PLAY AGAIN!!!")
            window.reload()
+           audioGameOver.play()
            // ctx.clearRect(0,0,canvas.width,canvas.height)
            // ctx.font = '30px Arial';
            // ctx.fillText('Gameover: reload to play again',300,200)
@@ -77,3 +80,5 @@ let canvas = document.getElementById('background')
         ctx.fillText('Score: ' + score,350,200)
     }
 
+    var audioBouncing = new Audio('sound2.wav')
+    var audioGameOver = new Audio('sound-gameover.wav')
