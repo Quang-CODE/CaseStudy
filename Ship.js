@@ -77,7 +77,7 @@ let canvas = document.getElementById('background')
     function countScore(){
         score = score + 1;
         ctx.font = '30px Arial';
-        ctx.fillText('Score: ' + score,350,200)
+        ctx.fillText('Score: ' + score,400,200)
     }
 
     var audioBouncing = new Audio('sound2.wav')
