@@ -1,0 +1,11 @@
+button{
+    border-radius: 10px;
+    margin-bottom: 300px;
+}
+canvas{
+    margin: auto;
+    margin-left: 250px;
+}
+body{
+    background-image: url("Background.jpg");
+}
